@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    background-color: #F9F9FF;
+}
+.myheader{
+    background-color: #445CD5;
+}
+.nav-menu{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.landing{
+    background-image: url('images/untitled.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.hero{
+    margin: 13% 0 5% 0;
+    color:white;
+    font-family: Roboto;
+}
+
+.hero-text{
+    font-size: 7vmin;
+    margin: 0 0 10px 0;
+}
+.hero-text-2{
+    font-size:14px;
+    margin: 0 0 0 4px;
+    /* text-align: justify; */
+}
+.hero-img{
+    margin: 5% 0 0 0px;
+}
+.hero-img img{
+    height: 40vw;
+}
+.dbtn{
+    text-decoration: none;
+    font-size: small;
+    font-family: Roboto;
+    color: black;
+    padding: 12px;
+    margin: 4% 5% 0% 0%;
+    background-color: white;
+    border:2px solid white;
+    border-radius: 10px;
+}
+.btnlnk{
+    display: flex;
+}
+.text-1{
+    margin-bottom: 5%;
+}
+.text-1-1{
+    width: 40%;
+    text-align: center;
+    margin-left: 30%;
+    font-weight: 500;
+    font-size: 170%;
+    font-family: poppins;
+    color:black
+}
+.text-1-2{
+    width: 45%;
+    text-align: center;
+    margin-left: 28%;
+    font-size: smaller;
+    color: #707070;
+}
+
+.cards{
+    background-color: #F9F9FF;
+    height: 55vh;
+    margin: 0 5% 0 5%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 15px #0000000D;
+}
+.cards img{
+    height: 40%;
+    margin: 15% 0 5% 0%;
+}
+.cards h5{
+    font-family: Roboto;
+    color: black;
+    text-align: center;
+}
+.cards p{
+    margin-left: 15%;
+    font-size:smaller;
+    width: 79%;
+    color: #6B6969;
+}
+
+.text-3{
+    margin-top: 7%;
+    display: flex;
+}
+.blngl{
+    height: 10%;
+}
+.blngl img{
+    margin: -12% 0% 0% 40%;
+    height:10%
+}
+.blngltxt{
+    margin: 8% 0% 0% 0%;
+    font-family: poppins;
+}
+.blngltxt h4{
+    font-weight: 700;
+}
+.blngltxt p{
+    color: #707070;
+    font-size: small;
+}
+.gtmr{
+    font-size: small;
+}
+.text-4{
+    text-align: center;
+}
+.text-4-1 h2{
+    margin: auto;
+    width: 40%;
+    font-weight: 600;
+}
+.text-4-1 p{
+    margin: auto;
+    width: 36%;
+    font-size: small;
+    color: #707070;
+    margin-top: 1%;
+}
+.mini{
+    height: 60%;
+    padding: 4px;
+}
+.text-4-2 div{
+justify-content: center;
+}
+.a{
+    font-weight: 600;
+    margin: 6% 0% 0% -12%;
+    height: fit-content;
+}
+.ma{
+    height: fit-content;
+}
+.myfoot{
+    background-color: #EBEBF8;
+}
+.f h5{
+    font-weight: bold;
+}
+
+
+
+
+@media screen and (max-width:1218px) {
+    .text-3{
+        display: block;
+    }
+    .blngltxt{
+        margin: auto;
+        font-family: poppins;
+    }
+}
+
+@media screen and (max-width:920px) {
+    .hero{
+        margin: 4% 0 5% 0;
+    }
+    
+    .hero-text{
+        font-size: 30px;
+        margin: 0 0 10px 0;
+    }
+    .hero-text-2{
+        font-size:16px;
+        margin: 0 0 20px 4px;
+        /* text-align: justify; */
+    }
+}
+
+@media screen and (max-width:763px) {
+    .dbtn{
+        text-decoration: none;
+        font-size: small;
+        font-family: Roboto;
+        color: black;
+        padding: 6px;
+        margin: 4% 3% 0% 0%;
+        background-color: white;
+        border:2px solid white;
+        border-radius: 10px;
+    }
+    .hero-text{
+        font-size: 23px;
+        margin: 0 0 10px 0;
+    }
+    .hero-text-2{
+        font-size:14px;
+        margin: 0 0 20px 4px;
+        /* text-align: justify; */
+    }
+    .explore{
+        font-size: 14px;
+    }
+    .blngl img{
+        margin: -12% 0% 0% -10%;
+        height:70%
+    }
+    /* .btnlnk{
+        display: block;
+    } */
+}
+
+@media screen and (max-width:710px) {
+    .explore{
+        font-size: 13px;
+    }
+    .hero-text{
+        font-size: 23px;
+        margin: 0 0 10px 0;
+    }
+    .hero-text-2{
+        font-size:14px;
+        margin: 0 0 0 4px;
+        /* text-align: justify; */
+    }   
+
+}
+
+@media screen and (max-width:635px) {
+    .explore{
+        font-size: 13px;
+    }
+    .hero{
+        margin: 2% 0 5% 0;
+    }
+    .hero-text{
+        font-weight: bold;
+        font-size: 14px;
+        margin: 0 0 10px 0;
+    }
+    .hero-text-2{
+        font-size:12px;
+        margin: 0 0 10px 4px;
+        /* text-align: justify; */
+    }
+    .btnlnk a{
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .btnlnk{
+        display: block;
+    }
+}
