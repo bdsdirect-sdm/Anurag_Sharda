@@ -1,9 +1,10 @@
 const User = require('../model/User');
 const express = require('express');
 const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken')
+const JWT = require('jsonwebtoken')
 const app = express();
-const secret = "Anurag123#@!"
+const secret = "Anurag123#@!";
+var token;
 
 app.use(express.json());
 
@@ -28,7 +29,7 @@ const addUser = async (req, res) => {
         req.body.password = await bcrypt.hash(req.body.password, 10);
         const user = await User.create(req.body);
         
-        res.json(user, token);
+        res.json(user);
     }
     catch(err){
         console.log(err.message);
@@ -49,18 +50,22 @@ const updatUser = async (req, res) => {
 const loginUser = async (req, res) => {
     const {email, password} = req.body;
     const user = await User.findOne({ where: { email: email } })
-    console.log(user)
+    // console.log(user)
     if(user){
         const pass = await bcrypt.compare(password, user.password);
         if(pass){
-            const token = jwt.sign(user, secret);
-            res.json(user)
+            token = JWT.sign({user}, secret);
+            
+            res.json({"users": user, "token": token});
+
+            const check = JWT.verify(token,secret);
+            console.log(check);
             console.log("User login successfully.....");
         } else {
             res.status(401).send("Invalid Credentials.....");
         }
     } else {
-        res.status(401).send("User doesn't exist")
+        res.status(401).send("User doesn't exist");
     }
 }
 
